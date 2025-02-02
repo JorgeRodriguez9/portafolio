@@ -1,13 +1,34 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
+import { DeviconContainerComponent } from './devicon-container/devicon-container.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [CommonModule, DeviconContainerComponent, RouterOutlet, RouterLink]
+
 })
 export class AppComponent {
-  title = 'portafolio';
+  title = 'portafolio-2022';
+
+  constructor(private router: Router) {
+    if(this.router.url === '/'){
+      router.navigateByUrl('./');
+    }
+  }
+
+  current = false;
+
+  updateSelection(id: string) {
+    if (id === 'a1') {
+      this.current = false;
+      return;
+    }
+
+    this.current = true;
+  }
 }
+

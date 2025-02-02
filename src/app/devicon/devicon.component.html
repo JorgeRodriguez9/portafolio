@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"> <!--https://devicon.dev/-->
+
+<div [ngClass]="'icon-container ' + containerSize">
+    <i [ngClass]="baseIcon + ' ' + iconSize + ' colored'"></i>
+    <p *ngIf="showText">{{iconName}}</p>
+</div>
+          

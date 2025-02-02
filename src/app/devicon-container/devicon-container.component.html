@@ -1,0 +1,10 @@
+<div [ngClass]="'icons-container ' + gapSize">
+    <ng-container *ngFor="let icon of Icons">
+
+        <a *ngIf="icon.linkTo !== undefined" target="_blank" [href]="icon.linkTo">
+            <app-icons [baseIcon]="IconsList[icon.name]" [size]="IconSize" [showText]="ShowText" [iconName]="icon.name"></app-icons>    
+        </a>
+
+        <app-icons *ngIf="icon.linkTo === undefined" [baseIcon]="IconsList[icon.name]" [size]="IconSize" [showText]="ShowText" [iconName]="icon.name"></app-icons>
+    </ng-container>
+</div>

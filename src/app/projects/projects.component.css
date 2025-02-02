@@ -1,0 +1,61 @@
+p
+{
+    text-align: center;
+}
+/* Aplica una sombra a los botones de control del carrusel para destacarlos */
+.carousel-control-prev,
+.carousel-control-next {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7)); /* Sombra para destacar */
+}
+
+/* Estilo general para los íconos de control del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    border-radius: 50%; /* Bordes redondeados */
+    width: 50px; /* Ancho del fondo del botón */
+    height: 50px; /* Alto del fondo del botón */
+    position: relative; /* Posición relativa para poder centrar el pseudo-elemento */
+}
+
+/* Pseudo-elementos ::before para las flechas internas, con tamaño reducido */
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: ''; /* Crea un contenido vacío, necesario para pseudo-elementos */
+    display: block; /* Se comporta como un bloque */
+    width: 20px; /* Ancho de la flecha interna */
+    height: 20px; /* Alto de la flecha interna */
+    position: absolute; /* Posición absoluta para centrar dentro del botón */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste para centrar exactamente el pseudo-elemento */
+    background-size: contain; /* La imagen de fondo se escala para ajustarse al tamaño del contenedor */
+    background-repeat: no-repeat; /* La imagen de fondo no se repite */
+}
+
+/* Eliminamos la imagen de fondo original de los íconos del carrusel */
+/*Eliminamos la imagen de fondo original de los íconos del carrusel porque Bootstrap, por defecto, usa una imagen SVG para las flechas de navegación en el carrusel.
+ Para personalizar los íconos (como cambiar su tamaño o apariencia), necesitamos eliminar esa imagen de fondo predeterminada y usar nuestros propios íconos.
+*/
+.carousel-control-prev-icon {
+    background-image: none;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+/* Imagen de fondo personalizada para la flecha hacia la izquierda */
+/*Color fill="%23FFFFFF"*/
+.carousel-control-prev-icon::before {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23FFFFFF" viewBox="0 0 8 8"%3E%3Cpath d="M4.5 0L0 4l4.5 4V5h3V3h-3V0z"%3E%3C/path%3E%3C/svg%3E'); /* Ícono de flecha blanca */
+}
+
+/* Imagen de fondo personalizada para la flecha hacia la derecha */
+.carousel-control-next-icon::before {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23FFFFFF" viewBox="0 0 8 8"%3E%3Cpath d="M3.5 0L8 4l-4.5 4V5H1V3h2.5V0z"%3E%3C/path%3E%3C/svg%3E'); /* Ícono de flecha blanca */
+}
+
+
+
+

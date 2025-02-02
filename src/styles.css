@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+h1,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #5271ff;
+    font-weight: bold;
+}
+
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    color: black;
+}
+
+
+.spacer {
+    height: 20px;
+}
+
+.crystal-card {
+
+    box-sizing: border-box;
+
+    /*background-color: white;*/
+    border-radius: 20px;
+    padding: 20px 50px 30px 50px;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /*
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.crystal-item {
+    border-radius: 20px;
+    padding-bottom: 20px;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    overflow: hidden;
+}
