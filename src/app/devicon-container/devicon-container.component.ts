@@ -59,7 +59,8 @@ export class DeviconContainerComponent implements OnInit {
     "Flask" : "devicon-flask-original",
     "MongoDB" : "devicon-mongodb-plain",
     "LinkedIn" : "devicon-linkedin-plain",
-    "Matlab" : "devicon-matlab-plain colored"
+    "Matlab" : "devicon-matlab-plain",
+    "Pycharm" : "devicon-pycharm-plain"
   };
 
 }

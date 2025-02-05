@@ -327,11 +327,11 @@
         <div class="p-2">
             <h5 class="pb-4">Desarrollo de una Red Neuronal Convolucional</h5>
 
-            <p>Red Neuronal Convolucional es un proyecto que se ralizo con el objetivo de 
+            <p>Red Neuronal Convolucional es un proyecto que se realizo con el objetivo de 
                 predecir dos tipos de pescados y entender el desarrollo de una red Neuronal Convolucional
                 de principio a fin.
                 El proceso consta de tres Etapas. 
-                la primera etapa consta de realizar el tratamiento que cualquier grupo de
+                la primera etapa es realizar el tratamiento que cualquier grupo de
                 imágenes necesita, en este caso imagenes y fotos tomadas a dos tipos de peces
                 Buscando realzar los patrones más significativos que relacionan a cada categoría en especial
                 y preparándolas para ser usadas en el entrenamiento de una red.
@@ -344,7 +344,99 @@
             </p>
 
             <app-devicon-container IconSize="small"
-                [Icons]="[{name:'Matlab'}, {name:'Csharp'}, {name:'HTML'}, {name:'Css'}, {name:'Bootstrap'}, {name:'SqlServer'}]">
+                [Icons]="[{name:'Matlab'}]">
+            </app-devicon-container>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+    <!--Break-->
+
+    <div class="col-md-12 crystal-item">
+        <div class="col-sm-12 m-auto pb-4">
+
+            <div id="RNCYOLOcarousel" class="carousel carousel-dark slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#RNCYOLOcarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#RNCYOLOcarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#RNCYOLOcarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#RNCYOLOcarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#RNCYOLOcarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#RNCYOLOcarousel" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button> 
+                    <button type="button" data-bs-target="#RNCYOLOcarousel" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button> 
+                    <button type="button" data-bs-target="#RNCYOLOcarousel" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#RNCYOLOcarousel" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>                                           
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src=".\assets\resources\RNCYOLO\Img_YOLO.png" class="d-block w-100" alt="...">
+                    </div>          
+                    <div class="carousel-item">
+                        <img src=".\assets\resources\RNCYOLO\Arquitectura-Yolov8.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\resources\RNCYOLO\Tratamiento_de_imagenes.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\resources\RNCYOLO\Entrenamiento.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\resources\RNCYOLO\Finalizacion_entrenamiento.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\resources\RNCYOLO\Imagen_de_entrenamiento_1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\resources\RNCYOLO\Imagen_de_entrenamiento_2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\resources\RNCYOLO\Prueba_1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\resources\RNCYOLO\Prueba_2.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#RNCYOLOcarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#RNCYOLOcarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="p-2">
+            <h5 class="pb-4">Uso de la RNC YOLO</h5>
+
+            <p>La red neuronal convolucional YOLO (You Only Look Once) se realizo con el objetivo de 
+                entender y aplicar una red real usada por muchas personas y compañias en el mundo.
+                Se estudio a fondo el funcionamiento de la red, como realiza el entrenamiento y cual es su
+                principal forma de aprendizaje.
+                Inicialmente se le entregan las imagenes a la red tratadas de la forma en la que YOLO las recibe 
+                y es capaz de entenderlas. El proceso se realizo en Labelme programa que permitía tratar las imagenes 
+                y obtener sus etiquetas normalizadas para luego entregarlas a la red YOLO.
+                Finalmente YOLO se encarga de realizar todo el entrenamiento permitiendo tambien ajustarle 
+                parametros iniciales como el Alpha, el Beta (Momentum), la confianza entre otros.
+                Por ultimo la red entrega la base del conocimiento adquirida (El modelo) para poder usarlo 
+                desarrollando una pequeña aplicación que por medio de la cámara
+                del computador o de cualquier dispositivo movil permita realizar las predicciones en tiempo real.
+            </p>
+
+            <app-devicon-container IconSize="small"
+                [Icons]="[{name:'Pycharm'}, {name:'Python'}]">
             </app-devicon-container>
         </div>
     </div>
